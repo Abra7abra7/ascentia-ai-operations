@@ -1,0 +1,14 @@
+# W1 model wiring.
+#
+# No CopilotKit-managed model is used. The model key stays outside the repository, in .env
+# (gitignored). The Vault already holds OPENROUTER_API_KEY; OpenRouter is OpenAI-compatible,
+# so set in .env:
+#   OPENAI_BASE_URL=https://openrouter.ai/api/v1
+#   OPENAI_API_KEY=<OPENROUTER_API_KEY>
+#   BOT_MODEL=<an OpenRouter model id>
+# and keep provider `openai`. The default below is the shipped fintech default and is only a
+# fallback until BOT_MODEL names the OpenRouter model.
+model:
+  provider: openai
+  credential_secret_ref: openai-api-key
+  default_model: gpt-5.6-terra

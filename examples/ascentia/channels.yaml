@@ -1,0 +1,6 @@
+channels:
+  - id: ai-operations
+    name: AI Operations
+    description: W1 proof — triage a test mailbox and produce a daily report.
+    permitted_agents: [email-triage, daily-report]
+    allowed_groups: [all]

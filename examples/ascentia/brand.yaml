@@ -1,0 +1,9 @@
+# Tenant package for ASCENTIA AI Operations (W1 self-host proof).
+#
+# Legal condition (07 Legal, 18.11.2026): the product name must contain neither "OpenBot"
+# nor "CopilotKit"; attribution "based on OpenBot" lives in NOTICE, not in the product name.
+#
+# PLACEHOLDER name for W1. The final product name is owned by 13 Design (W2) and Marián.
+tenant:
+  id: openbot          # keep the tenant id stable; it owns package Bots across restarts
+  product_name: ASCENTIA AI Operations

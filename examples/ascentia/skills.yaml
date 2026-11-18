@@ -1,0 +1,29 @@
+# Skills shipped with the W1 package.
+#
+# A skill is an instruction plus the tools it needs; it grants no capability by itself. The
+# `tools:` refs below are for a read-only mailbox connector. They are named so that connecting a
+# read-only mailbox is the only remaining step. No send/compose/delete tool is listed anywhere,
+# which is what makes the negative test fail the send attempt.
+skills:
+  - slug: triage-inbox
+    title: Triage the inbox
+    summary: Sort a mailbox into Urgent / Needs reply / FYI and draft replies for a person.
+    instructions: >-
+      Read every message in the test mailbox before categorising. Give each message exactly one of
+      Urgent, Needs reply or FYI, with one line of why and the sender and subject. Quote the
+      sentence that decided the category. Draft a reply where one is needed and hand it back for a
+      person to review; never send, reply, forward, delete or move a message. Name the messages you
+      could not read and why.
+    tools:
+      - gmail/search
+      - gmail/read_message
+
+  - slug: daily-report
+    title: Write the daily report
+    summary: Summarise what changed, what is at risk and what needs a decision, with sources.
+    instructions: >-
+      Read the granted sources, then write a short report: what changed since the last report, what
+      is at risk, and what needs a decision today. Give the source of every number and never invent
+      one. If a source is missing, say so and continue. Deliver the report in the conversation;
+      never send it to anybody.
+    tools: []

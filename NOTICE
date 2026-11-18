@@ -1,0 +1,21 @@
+ASCENTIA AI Operations — self-host deployment
+=============================================
+
+This repository is a fork of OpenBot.
+
+  OpenBot
+  Copyright (c) 2026 CopilotKit
+  Licensed under the MIT License (see LICENSE).
+  Upstream: https://github.com/CopilotKit/OpenBot
+
+Built on OpenBot. Portions of this deployment are based on OpenBot, used under the MIT License.
+The MIT copyright and permission notice is retained in LICENSE and must stay in every copy,
+distribution or substantial portion of the software (MIT condition).
+
+Changes made for ASCENTIA AI Operations live in this fork and are separate from the upstream
+project; they are not endorsed by or affiliated with CopilotKit.
+
+Note (scope, 07 Legal 18.11.2026): this deployment does not use CopilotKit's hosted/managed
+service. OpenBot's backend runs from OpenBot's published images and requires CopilotKit
+Intelligence, which is separately licensed; the product name contains neither "OpenBot" nor
+"CopilotKit".
